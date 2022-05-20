@@ -33,6 +33,15 @@ namespace PepegaCoin
 
             return networkDateTime;
         }
-        
+        public static string ByteArrayToString(byte[] ba)
+        {
+            return BitConverter.ToString(ba).Replace("-", "");
+        }
+        public static string Base64Decoder(string encodedString)
+        {
+            byte[] data = Convert.FromBase64String(encodedString);
+            string decodedString = Encoding.UTF8.GetString(data);
+            return decodedString;
+        }
     }
 }

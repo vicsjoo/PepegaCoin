@@ -20,6 +20,7 @@ namespace PepegaCoin
 
         private void PepegaForm_Load(object sender, EventArgs e) 
         {
+            PepegaCoin.Encryption.generateKeyPair();
             timer1.Start();
             // label2.Text = Utility.GetNetworkTime().ToString();
         }

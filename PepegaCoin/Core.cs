@@ -11,6 +11,7 @@ namespace PepegaCoin
        public enum chainmsg
         {
             ANNOUNCE,
+            OWNERSHIP,
             QUERY,
             SYNC,
             BUSY,
