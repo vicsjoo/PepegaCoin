@@ -10,12 +10,22 @@ namespace PepegaCoin
     {
        public enum chainmsg
         {
+            ANNOUNCE,
             QUERY,
-            VALIDATE,
-            TIME_EXPR,
+            SYNC,
             BUSY,
+            DENY,
+            TIMEOUT,
+            BAN_PEER,
+            EXPIRED_CHALLENGE,
             NOTFOUND,
-            KEY_MISMATCH
+            VALIDATE,
+            INVALIDATE,
+            KEY_MISMATCH,
+            TIME_ERR,
+            SHADOWCOPY,
+            UNKNOWN            
+            
         }
     }
 }
