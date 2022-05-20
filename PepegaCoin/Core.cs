@@ -8,5 +8,14 @@ namespace PepegaCoin
 {
     class Core
     {
+       public enum chainmsg
+        {
+            QUERY,
+            VALIDATE,
+            TIME_EXPR,
+            BUSY,
+            NOTFOUND,
+            KEY_MISMATCH
+        }
     }
 }
